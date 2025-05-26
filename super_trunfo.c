@@ -22,5 +22,36 @@ int main() {
     int pontosTuristicos2; // QUANTIDADE DE PONTOS TURISTICOS
     char codigoFinal2[10]; // CÓDIGO FINAL CONCATENADO (EX: B03)
 
+    printf("-------------------------------------SUPER TRUNFO-------------------------------------\n");
     
+    // Leitura dos dados da 1º carta
+    printf("Cadastro da 1º Carta:\n");
+
+    printf("Digite uma letra de (A a H) para representar o estado: ");
+    scanf(" %1s", estado1); // lê uma letra como string
+
+    printf("Digite o Código da Carta (01 a 04): ");
+    scanf("%2s", codigo1); // lê até 2 caracteres
+
+    sprintf(codigoFinal1, "%c%s", estado1[0], codigo1); // monta código final (ex: A01)
+
+    printf("Digite o Nome da Cidade: ");
+    scanf("%s", nomeCidade1); // nome sem espaços
+
+    printf("Digite a População da Cidade: ");
+    scanf("%d", &populacao1);
+
+    printf("Digite a Área da Cidade (em km²): ");
+    scanf("%f", &area1);
+
+    printf("Digite o PIB da Cidade: ");
+    scanf("%f", &pib1);
+
+    printf("Digite o Número de Pontos Turísticos: ");
+    scanf("%d", &pontosTuristicos1);
+
+
+   
+
+   
 }
