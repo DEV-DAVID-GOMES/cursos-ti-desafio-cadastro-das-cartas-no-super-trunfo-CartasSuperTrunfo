@@ -51,7 +51,31 @@ int main() {
     scanf("%d", &pontosTuristicos1);
 
 
-   
+      // Leitura dos dados da 2º carta
+    printf("Cadastro da 2º Carta:\n");
+
+    printf("Digite uma letra de (A a H) para representar o estado: ");
+    scanf(" %1s", estado2); // lê uma letra como string
+
+    printf("Digite o Código da Carta (01 a 04): ");
+    scanf("%2s", codigo2); // lê até 2 caracteres
+
+    sprintf(codigoFinal2, "%c%s", estado2[0], codigo2); // monta código final (ex: B01)
+
+    printf("Digite o Nome da Cidade: ");
+    scanf("%s", nomeCidade2); // nome sem espaços
+
+    printf("Digite a População da Cidade: ");
+    scanf("%d", &populacao2);
+
+    printf("Digite a Área da Cidade (em km²): ");
+    scanf("%f", &area2);
+
+    printf("Digite o PIB da Cidade: ");
+    scanf("%f", &pib2);
+
+    printf("Digite o Número de Pontos Turísticos: ");
+    scanf("%d", &pontosTuristicos2);
 
    
 }
