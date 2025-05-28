@@ -11,6 +11,8 @@ int main() {
     float pib1; // PRODUTO INTERNO BRUTO DA CIDADE
     int pontosTuristicos1; // QUANTIDADE DE PONTOS TURISTICOS
     char codigoFinal1[10]; // CÓDIGO FINAL CONCATENADO (EX: A01)
+    float densidadePopulacional1; // DENSIDADE POPULACIONAL DA CIDADE 1
+    float pibPerCapita1; // PIB PER CAPITA DA CIDADE 1
 
     //DADOS DA 2º CARTA
     char estado2[20]; // NOME DO ESTADO: ATÉ 19 CARACTERES
@@ -21,6 +23,8 @@ int main() {
     float pib2; // PRODUTO INTERNO BRUTO DA CIDADE
     int pontosTuristicos2; // QUANTIDADE DE PONTOS TURISTICOS
     char codigoFinal2[10]; // CÓDIGO FINAL CONCATENADO (EX: B03)
+    float densidadePopulacional2; // DENSIDADE POPULACIONAL DA CIDADE 2
+    float pibPerCapita2; // PIB PER CAPITA DA CIDADE 2
 
     printf("-------------------------------------SUPER TRUNFO-------------------------------------\n");
     
