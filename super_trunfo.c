@@ -118,7 +118,58 @@ int main()
   printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
   printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
   printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
-   printf("Super Poder: %.2f\n", superPoder2);
+  printf("Super Poder: %.2f\n", superPoder2);
+
+     printf("\nComparação de Cartas:\n");
+
+    if (populacao1 > populacao2)
+        printf("População: Carta 1 venceu\n");
+    else if (populacao2 > populacao1)
+        printf("População: Carta 2 venceu\n");
+    else
+        printf("População: Empate\n");
+
+    if (area1 > area2)
+        printf("Área: Carta 1 venceu\n");
+    else if (area2 > area1)
+        printf("Área: Carta 2 venceu\n");
+    else
+        printf("Área: Empate\n");
+
+    if (pib1 > pib2)
+        printf("PIB: Carta 1 venceu\n");
+    else if (pib2 > pib1)
+        printf("PIB: Carta 2 venceu\n");
+    else
+        printf("PIB: Empate\n");
+
+    if (pontosTuristicos1 > pontosTuristicos2)
+        printf("Pontos Turísticos: Carta 1 venceu\n");
+    else if (pontosTuristicos2 > pontosTuristicos1)
+        printf("Pontos Turísticos: Carta 2 venceu\n");
+    else
+        printf("Pontos Turísticos: Empate\n");
+
+    if (densidadePopulacional1 < densidadePopulacional2)
+        printf("Densidade Populacional: Carta 1 venceu (menor é melhor)\n");
+    else if (densidadePopulacional2 < densidadePopulacional1)
+        printf("Densidade Populacional: Carta 2 venceu (menor é melhor)\n");
+    else
+        printf("Densidade Populacional: Empate\n");
+
+    if (pibPerCapita1 > pibPerCapita2)
+        printf("PIB per Capita: Carta 1 venceu\n");
+    else if (pibPerCapita2 > pibPerCapita1)
+        printf("PIB per Capita: Carta 2 venceu\n");
+    else
+        printf("PIB per Capita: Empate\n");
+
+    if (superPoder1 > superPoder2)
+        printf("Super Poder: Carta 1 venceu\n");
+    else if (superPoder2 > superPoder1)
+        printf("Super Poder: Carta 2 venceu\n");
+    else
+        printf("Super Poder: Empate\n");
 
   return 0;
 }
