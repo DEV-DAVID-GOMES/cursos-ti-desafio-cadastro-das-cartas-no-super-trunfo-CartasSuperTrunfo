@@ -171,5 +171,19 @@ int main()
     else
         printf("Super Poder: Empate\n");
 
+      // MENU INTERATIVO PARA ESCOLHA DO ATRIBUTO
+  int escolha;
+
+  printf("\n---------------- MENU DE COMPARAÇÃO ----------------\n");
+  printf("Escolha o atributo para comparar:\n");
+  printf("1 - População\n");
+  printf("2 - Área\n");
+  printf("3 - PIB\n");
+  printf("4 - Pontos Turísticos\n");
+  printf("5 - Densidade Demográfica\n");
+  printf("----------------------------------------------------\n");
+  printf("Digite a opção: ");
+  scanf("%d", &escolha);
+
   return 0;
 }
