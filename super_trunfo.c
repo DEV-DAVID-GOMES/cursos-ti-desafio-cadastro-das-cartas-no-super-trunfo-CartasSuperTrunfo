@@ -215,6 +215,18 @@ int main()
       printf("Resultado: Empate!\n");
     break;
 
-
+         case 3:
+    // Comparação de PIB
+    printf("\nComparando PIB:\n");
+    printf("%s: R$ %.2f\n", nomeCidade1, pib1);
+    printf("%s: R$ %.2f\n", nomeCidade2, pib2);
+    if (pib1 > pib2)
+      printf("Resultado: %s venceu!\n", nomeCidade1);
+    else if (pib2 > pib1)
+      printf("Resultado: %s venceu!\n", nomeCidade2);
+    else
+      printf("Resultado: Empate!\n");
+    break;
+    
         return 0;
     }
