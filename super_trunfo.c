@@ -201,58 +201,62 @@ int main()
             printf("Resultado: Empate!\n");
         break;
 
-        
-  case 2:
-    // Comparação de Área
-    printf("\nComparando Área:\n");
-    printf("%s: %.2f km²\n", nomeCidade1, area1);
-    printf("%s: %.2f km²\n", nomeCidade2, area2);
-    if (area1 > area2)
-      printf("Resultado: %s venceu!\n", nomeCidade1);
-    else if (area2 > area1)
-      printf("Resultado: %s venceu!\n", nomeCidade2);
-    else
-      printf("Resultado: Empate!\n");
-    break;
+    case 2:
+        // Comparação de Área
+        printf("\nComparando Área:\n");
+        printf("%s: %.2f km²\n", nomeCidade1, area1);
+        printf("%s: %.2f km²\n", nomeCidade2, area2);
+        if (area1 > area2)
+            printf("Resultado: %s venceu!\n", nomeCidade1);
+        else if (area2 > area1)
+            printf("Resultado: %s venceu!\n", nomeCidade2);
+        else
+            printf("Resultado: Empate!\n");
+        break;
 
-         case 3:
-    // Comparação de PIB
-    printf("\nComparando PIB:\n");
-    printf("%s: R$ %.2f\n", nomeCidade1, pib1);
-    printf("%s: R$ %.2f\n", nomeCidade2, pib2);
-    if (pib1 > pib2)
-      printf("Resultado: %s venceu!\n", nomeCidade1);
-    else if (pib2 > pib1)
-      printf("Resultado: %s venceu!\n", nomeCidade2);
-    else
-      printf("Resultado: Empate!\n");
-    break;
+    case 3:
+        // Comparação de PIB
+        printf("\nComparando PIB:\n");
+        printf("%s: R$ %.2f\n", nomeCidade1, pib1);
+        printf("%s: R$ %.2f\n", nomeCidade2, pib2);
+        if (pib1 > pib2)
+            printf("Resultado: %s venceu!\n", nomeCidade1);
+        else if (pib2 > pib1)
+            printf("Resultado: %s venceu!\n", nomeCidade2);
+        else
+            printf("Resultado: Empate!\n");
+        break;
 
-      case 4:
-    // Comparação de Pontos Turísticos
-    printf("\nComparando Pontos Turísticos:\n");
-    printf("%s: %d pontos\n", nomeCidade1, pontosTuristicos1);
-    printf("%s: %d pontos\n", nomeCidade2, pontosTuristicos2);
-    if (pontosTuristicos1 > pontosTuristicos2)
-      printf("Resultado: %s venceu!\n", nomeCidade1);
-    else if (pontosTuristicos2 > pontosTuristicos1)
-      printf("Resultado: %s venceu!\n", nomeCidade2);
-    else
-      printf("Resultado: Empate!\n");
-    break;
+    case 4:
+        // Comparação de Pontos Turísticos
+        printf("\nComparando Pontos Turísticos:\n");
+        printf("%s: %d pontos\n", nomeCidade1, pontosTuristicos1);
+        printf("%s: %d pontos\n", nomeCidade2, pontosTuristicos2);
+        if (pontosTuristicos1 > pontosTuristicos2)
+            printf("Resultado: %s venceu!\n", nomeCidade1);
+        else if (pontosTuristicos2 > pontosTuristicos1)
+            printf("Resultado: %s venceu!\n", nomeCidade2);
+        else
+            printf("Resultado: Empate!\n");
+        break;
 
+    case 5:
+        // Comparação de Densidade Demográfica (regra invertida)
+        printf("\nComparando Densidade Demográfica:\n");
+        printf("%s: %.2f hab/km²\n", nomeCidade1, densidadePopulacional1);
+        printf("%s: %.2f hab/km²\n", nomeCidade2, densidadePopulacional2);
+        if (densidadePopulacional1 < densidadePopulacional2)
+            printf("Resultado: %s venceu (menor densidade)!\n", nomeCidade1);
+        else if (densidadePopulacional2 < densidadePopulacional1)
+            printf("Resultado: %s venceu (menor densidade)!\n", nomeCidade2);
+        else
+            printf("Resultado: Empate!\n");
+        break;
 
-     case 5:
-    // Comparação de Densidade Demográfica (regra invertida)
-    printf("\nComparando Densidade Demográfica:\n");
-    printf("%s: %.2f hab/km²\n", nomeCidade1, densidadePopulacional1);
-    printf("%s: %.2f hab/km²\n", nomeCidade2, densidadePopulacional2);
-    if (densidadePopulacional1 < densidadePopulacional2)
-      printf("Resultado: %s venceu (menor densidade)!\n", nomeCidade1);
-    else if (densidadePopulacional2 < densidadePopulacional1)
-      printf("Resultado: %s venceu (menor densidade)!\n", nomeCidade2);
-    else
-      printf("Resultado: Empate!\n");
-    break;
-        return 0;
+    default:
+        // Tratamento de entrada inválida
+        printf("\nOpção inválida! Por favor, escolha um número de 1 a 5.\n");
+        break;
     }
+    return 0;
+}
