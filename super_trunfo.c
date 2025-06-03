@@ -227,6 +227,18 @@ int main()
     else
       printf("Resultado: Empate!\n");
     break;
-    
+
+      case 4:
+    // Comparação de Pontos Turísticos
+    printf("\nComparando Pontos Turísticos:\n");
+    printf("%s: %d pontos\n", nomeCidade1, pontosTuristicos1);
+    printf("%s: %d pontos\n", nomeCidade2, pontosTuristicos2);
+    if (pontosTuristicos1 > pontosTuristicos2)
+      printf("Resultado: %s venceu!\n", nomeCidade1);
+    else if (pontosTuristicos2 > pontosTuristicos1)
+      printf("Resultado: %s venceu!\n", nomeCidade2);
+    else
+      printf("Resultado: Empate!\n");
+    break;
         return 0;
     }
