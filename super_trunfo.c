@@ -240,5 +240,19 @@ int main()
     else
       printf("Resultado: Empate!\n");
     break;
+
+
+     case 5:
+    // Comparação de Densidade Demográfica (regra invertida)
+    printf("\nComparando Densidade Demográfica:\n");
+    printf("%s: %.2f hab/km²\n", nomeCidade1, densidadePopulacional1);
+    printf("%s: %.2f hab/km²\n", nomeCidade2, densidadePopulacional2);
+    if (densidadePopulacional1 < densidadePopulacional2)
+      printf("Resultado: %s venceu (menor densidade)!\n", nomeCidade1);
+    else if (densidadePopulacional2 < densidadePopulacional1)
+      printf("Resultado: %s venceu (menor densidade)!\n", nomeCidade2);
+    else
+      printf("Resultado: Empate!\n");
+    break;
         return 0;
     }
