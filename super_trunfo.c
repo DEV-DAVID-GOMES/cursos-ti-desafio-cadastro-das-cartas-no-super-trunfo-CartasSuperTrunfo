@@ -201,8 +201,20 @@ int main()
             printf("Resultado: Empate!\n");
         break;
 
-
-
         
+  case 2:
+    // Comparação de Área
+    printf("\nComparando Área:\n");
+    printf("%s: %.2f km²\n", nomeCidade1, area1);
+    printf("%s: %.2f km²\n", nomeCidade2, area2);
+    if (area1 > area2)
+      printf("Resultado: %s venceu!\n", nomeCidade1);
+    else if (area2 > area1)
+      printf("Resultado: %s venceu!\n", nomeCidade2);
+    else
+      printf("Resultado: Empate!\n");
+    break;
+
+
         return 0;
     }
