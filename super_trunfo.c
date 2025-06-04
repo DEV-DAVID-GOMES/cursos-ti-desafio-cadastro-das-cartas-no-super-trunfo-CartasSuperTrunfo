@@ -258,5 +258,19 @@ int main()
         printf("\nOpção inválida! Por favor, escolha um número de 1 a 5.\n");
         break;
     }
-    return 0;
+   
+      // MENU DE ESCOLHA DOS ATRIBUTOS
+    int atributo1, atributo2;
+    float valor1_carta1 = 0, valor1_carta2 = 0;
+    float valor2_carta1 = 0, valor2_carta2 = 0;
+
+    printf("\n--- ESCOLHA DOS ATRIBUTOS ---\n");
+    printf("Atributos disponíveis:\n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. Pontos Turísticos\n");
+    printf("5. Densidade Populacional\n");
+    printf("6. PIB per Capita\n");
+    printf("7. Super Poder\n");
 }
