@@ -390,4 +390,26 @@ int main()
 
     printf("Atributo 1 (%s): Carta 1 = %.2f | Carta 2 = %.2f\n", getNomeAtributo(atributo1), valor1_carta1, valor1_carta2);
     printf("Atributo 2 (%s): Carta 1 = %.2f | Carta 2 = %.2f\n", getNomeAtributo(atributo2), valor2_carta1, valor2_carta2);
+
+     // Lógica de comparação
+    float soma1 = 0, soma2 = 0;
+
+    // Atributo 1
+    if (atributo1 == 5) { // Densidade: quanto menor, melhor
+        soma1 += (valor1_carta1 < valor1_carta2) ? 1 : (valor1_carta1 == valor1_carta2 ? 0 : 0);
+        soma2 += (valor1_carta2 < valor1_carta1) ? 1 : (valor1_carta1 == valor1_carta2 ? 0 : 0);
+    } else {
+        soma1 += (valor1_carta1 > valor1_carta2) ? 1 : (valor1_carta1 == valor1_carta2 ? 0 : 0);
+        soma2 += (valor1_carta2 > valor1_carta1) ? 1 : (valor1_carta1 == valor1_carta2 ? 0 : 0);
+    }
+
+    // Atributo 2
+    if (atributo2 == 5) { // Densidade: quanto menor, melhor
+        soma1 += (valor2_carta1 < valor2_carta2) ? 1 : (valor2_carta1 == valor2_carta2 ? 0 : 0);
+        soma2 += (valor2_carta2 < valor2_carta1) ? 1 : (valor2_carta1 == valor2_carta2 ? 0 : 0);
+    } else {
+        soma1 += (valor2_carta1 > valor2_carta2) ? 1 : (valor2_carta1 == valor2_carta2 ? 0 : 0);
+        soma2 += (valor2_carta2 > valor2_carta1) ? 1 : (valor2_carta1 == valor2_carta2 ? 0 : 0);
+    }
+
 }
