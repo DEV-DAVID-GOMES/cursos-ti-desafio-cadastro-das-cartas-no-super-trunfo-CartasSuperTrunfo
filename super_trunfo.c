@@ -258,8 +258,8 @@ int main()
         printf("\nOpção inválida! Por favor, escolha um número de 1 a 5.\n");
         break;
     }
-   
-      // MENU DE ESCOLHA DOS ATRIBUTOS
+
+    // MENU DE ESCOLHA DOS ATRIBUTOS
     int atributo1, atributo2;
     float valor1_carta1 = 0, valor1_carta2 = 0;
     float valor2_carta1 = 0, valor2_carta2 = 0;
@@ -274,23 +274,25 @@ int main()
     printf("6. PIB per Capita\n");
     printf("7. Super Poder\n");
 
-       // Escolha do primeiro atributo
-    do {
+    // Escolha do primeiro atributo
+    do
+    {
         printf("Escolha o 1º atributo (1-7): ");
         scanf("%d", &atributo1);
         if (atributo1 < 1 || atributo1 > 7)
             printf("Opção inválida. Tente novamente.\n");
     } while (atributo1 < 1 || atributo1 > 7);
 
-     // Escolha do segundo atributo (diferente do primeiro)
-    do {
+    // Escolha do segundo atributo (diferente do primeiro)
+    do
+    {
         printf("Escolha o 2º atributo (diferente do 1º): ");
         scanf("%d", &atributo2);
         if (atributo2 == atributo1 || atributo2 < 1 || atributo2 > 7)
             printf("Opção inválida ou repetida. Tente novamente.\n");
     } while (atributo2 == atributo1 || atributo2 < 1 || atributo2 > 7);
 
-     // Função para obter os valores de cada atributo
+    // Função para obter os valores de cada atributo
     switch (atributo1)
     {
     case 1:
@@ -325,7 +327,7 @@ int main()
         printf("Erro na seleção do atributo 1.\n");
     }
 
-        switch (atributo2)
+    switch (atributo2)
     {
     case 1:
         valor2_carta1 = populacao1;
@@ -358,4 +360,34 @@ int main()
     default:
         printf("Erro na seleção do atributo 2.\n");
     }
+
+    // Exibição dos valores escolhidos
+    printf("\n--- COMPARAÇÃO DOS ATRIBUTOS ---\n");
+
+    // Função para exibir nome dos atributos
+    char *getNomeAtributo(int cod)
+    {
+        switch (cod)
+        {
+        case 1:
+            return "População";
+        case 2:
+            return "Área";
+        case 3:
+            return "PIB";
+        case 4:
+            return "Pontos Turísticos";
+        case 5:
+            return "Densidade Populacional";
+        case 6:
+            return "PIB per Capita";
+        case 7:
+            return "Super Poder";
+        default:
+            return "Desconhecido";
+        }
+    }
+
+    printf("Atributo 1 (%s): Carta 1 = %.2f | Carta 2 = %.2f\n", getNomeAtributo(atributo1), valor1_carta1, valor1_carta2);
+    printf("Atributo 2 (%s): Carta 1 = %.2f | Carta 2 = %.2f\n", getNomeAtributo(atributo2), valor2_carta1, valor2_carta2);
 }
