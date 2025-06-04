@@ -289,4 +289,73 @@ int main()
         if (atributo2 == atributo1 || atributo2 < 1 || atributo2 > 7)
             printf("Opção inválida ou repetida. Tente novamente.\n");
     } while (atributo2 == atributo1 || atributo2 < 1 || atributo2 > 7);
+
+     // Função para obter os valores de cada atributo
+    switch (atributo1)
+    {
+    case 1:
+        valor1_carta1 = populacao1;
+        valor1_carta2 = populacao2;
+        break;
+    case 2:
+        valor1_carta1 = area1;
+        valor1_carta2 = area2;
+        break;
+    case 3:
+        valor1_carta1 = pib1;
+        valor1_carta2 = pib2;
+        break;
+    case 4:
+        valor1_carta1 = pontosTuristicos1;
+        valor1_carta2 = pontosTuristicos2;
+        break;
+    case 5:
+        valor1_carta1 = densidadePopulacional1;
+        valor1_carta2 = densidadePopulacional2;
+        break;
+    case 6:
+        valor1_carta1 = pibPerCapita1;
+        valor1_carta2 = pibPerCapita2;
+        break;
+    case 7:
+        valor1_carta1 = superPoder1;
+        valor1_carta2 = superPoder2;
+        break;
+    default:
+        printf("Erro na seleção do atributo 1.\n");
+    }
+
+        switch (atributo2)
+    {
+    case 1:
+        valor2_carta1 = populacao1;
+        valor2_carta2 = populacao2;
+        break;
+    case 2:
+        valor2_carta1 = area1;
+        valor2_carta2 = area2;
+        break;
+    case 3:
+        valor2_carta1 = pib1;
+        valor2_carta2 = pib2;
+        break;
+    case 4:
+        valor2_carta1 = pontosTuristicos1;
+        valor2_carta2 = pontosTuristicos2;
+        break;
+    case 5:
+        valor2_carta1 = densidadePopulacional1;
+        valor2_carta2 = densidadePopulacional2;
+        break;
+    case 6:
+        valor2_carta1 = pibPerCapita1;
+        valor2_carta2 = pibPerCapita2;
+        break;
+    case 7:
+        valor2_carta1 = superPoder1;
+        valor2_carta2 = superPoder2;
+        break;
+    default:
+        printf("Erro na seleção do atributo 2.\n");
+    }
 }
