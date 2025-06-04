@@ -281,4 +281,12 @@ int main()
         if (atributo1 < 1 || atributo1 > 7)
             printf("Opção inválida. Tente novamente.\n");
     } while (atributo1 < 1 || atributo1 > 7);
+
+     // Escolha do segundo atributo (diferente do primeiro)
+    do {
+        printf("Escolha o 2º atributo (diferente do 1º): ");
+        scanf("%d", &atributo2);
+        if (atributo2 == atributo1 || atributo2 < 1 || atributo2 > 7)
+            printf("Opção inválida ou repetida. Tente novamente.\n");
+    } while (atributo2 == atributo1 || atributo2 < 1 || atributo2 > 7);
 }
