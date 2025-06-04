@@ -412,4 +412,16 @@ int main()
         soma2 += (valor2_carta2 > valor2_carta1) ? 1 : (valor2_carta1 == valor2_carta2 ? 0 : 0);
     }
 
+     printf("\n--- RESULTADO FINAL ---\n");
+    printf("Carta 1: %s | Soma de pontos: %.0f\n", nomeCidade1, soma1);
+    printf("Carta 2: %s | Soma de pontos: %.0f\n", nomeCidade2, soma2);
+
+    if (soma1 > soma2)
+        printf(">> Carta 1 VENCEU a rodada!\n");
+    else if (soma2 > soma1)
+        printf(">> Carta 2 VENCEU a rodada!\n");
+    else
+        printf(">> Empate!\n");
+
+    return 0;
 }
