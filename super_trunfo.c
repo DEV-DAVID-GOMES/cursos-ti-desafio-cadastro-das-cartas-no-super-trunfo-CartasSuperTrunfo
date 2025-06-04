@@ -273,4 +273,12 @@ int main()
     printf("5. Densidade Populacional\n");
     printf("6. PIB per Capita\n");
     printf("7. Super Poder\n");
+
+       // Escolha do primeiro atributo
+    do {
+        printf("Escolha o 1º atributo (1-7): ");
+        scanf("%d", &atributo1);
+        if (atributo1 < 1 || atributo1 > 7)
+            printf("Opção inválida. Tente novamente.\n");
+    } while (atributo1 < 1 || atributo1 > 7);
 }
